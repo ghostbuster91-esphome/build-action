@@ -91,7 +91,7 @@ class Config:
         """Get the source factory binary path."""
         if self.platform == "rp2040":
             return elf.with_name("firmware.uf2")
-        return elf.with_name("firmware.factory.bin")
+        return elf.with_name("firmware-factory.bin")
 
     def source_ota_bin(self, elf: Path) -> Path:
         """Get the source OTA binary path."""
